@@ -1,7 +1,7 @@
 $(function() {//new JQ function
   var $window = $(window);//make window into JQ obj. and store as var $window
   var $slideAd = $('#slideAd'); //make <div> w/ id 'slideAd' into JQ obj. and store as var '$slideAd'
-  var endZone = $('#footer').offset().top - $window.height() - 500;//likewise w/ <p> id 'footer' when offset by height of window less 500px, storing as var 'endZone'
+  var endZone = $('#footer').offset().top - $window.height() - 500;//likewise w/ <p> id 'footer' when offset from top of window by height of window less 500px, storing as var 'endZone'
 
   $window.on('scroll', function() {//when $window is scrolled run function...
 
