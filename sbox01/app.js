@@ -1,14 +1,12 @@
 $(function() {
   $('.animate').on('mouseover',function() {
-    var $animate = $(this);
-    $(this).animate({
-      height: '175px',
-      width: '175px',
-    }, function(mouseout) {
-      $(this).animate({
-        height: '100px',
-        width: '100px'
-      });
-    });
+    $(this).height($(this).height()*1.75),
+    $(this).width($(this).width()*1.75);
+  });
+});
+$(function() {
+  $('.animate').on('mouseout',function() {
+    $(this).height($(this).height()/1.75),
+    $(this).width($(this).width()/1.75);
   });
 });
