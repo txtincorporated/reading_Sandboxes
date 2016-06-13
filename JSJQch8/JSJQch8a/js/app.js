@@ -32,6 +32,13 @@ $('header#bonVoyage').html('<span>' + x.annamethod4U() + '</span>');
 //
 // strings.push(stringify(x, 'x'));
 
-var newString = JSON.stringify(x);
+function replaceX(key, value) {
+  if (key === 'bigness') {
+    return 'super';
+  }
+  return value;
+};
+
+var newString = JSON.stringify(x, replaceX);
 var nextString = newString.replace(/boldness/, 'badness');
 var y = JSON.parse(nextString);
