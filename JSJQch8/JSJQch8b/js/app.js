@@ -18,7 +18,11 @@ var fishTank = function() {
 fishTank();
 console.log(objArray);
 
-var argleNauts = JSON.stringify(objArray);
+var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
-$('#bonVoyage').html('<span>goldFishes = ' + argleNauts + '</span>');
+$.getJSON('js/myData.json').done(function(data) {
+  $.each(data.items, function(i, item) {
+    $('#bonVoyage').append('<div>' + data + '</div>');
+  });
+});
