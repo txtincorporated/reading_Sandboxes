@@ -11,7 +11,7 @@ var x = {
   }
 };
 console.log(x.annamethod4U());
-$('header#bonVoyage').html('<span>' + x.annamethod4U() + '</span>');
+$('header#bonVoyage').toHtml('<span>' + x.annamethod4U() + '</span>');
 
 //Special thx to https://gist.github.com/cowboy/3749767 for this cheesey stunt
 // var stringify = function(obj, prop) {
