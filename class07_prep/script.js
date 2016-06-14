@@ -1,10 +1,5 @@
-// Sandbox for class07_prep
-var ancestry =  $.getJSON('ancestry.js');
+var colors = {"blue", "green", "red", "yellow"};
 
-var byName = {};
-ancestry.forEach(function(person) {
-  byName[person.name] = person;
-});
+colors.shift();
 
-console.log(byName['Philibert Haverbeke']);
-// → {name: "Philibert Haverbeke", …}
+console.log(colors);
