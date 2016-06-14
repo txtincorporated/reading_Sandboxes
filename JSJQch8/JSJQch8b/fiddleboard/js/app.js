@@ -4,7 +4,7 @@ function Goldfish(name, gills, tail, poop) {
   this.name = name,
   this.gills = gills,
   this.tail = tail,
-  this. poop = poop;
+  this.poop = poop;
 }
 
 fishies = [['Dobie','silver','bifurcated','stringy'], ['Gawain','gold','single','pellets'], ['Porschia','white','frilly','segments']];
@@ -18,7 +18,14 @@ var fishTank = function() {
 fishTank();
 console.log(objArray);
 
-var argleNauts = JSON.stringify(objArray);
+var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
-$('#bonVoyage').html('<span>goldFishes = ' + argleNauts + '</span>');
+var destination = $('#bonVoyage');
+var url = 'js/myData.json';
+$.ajax({
+  url: url,
+  success: function(data) {
+    $destination.html($(data).find('#bonVoyage'));
+  }
+});
