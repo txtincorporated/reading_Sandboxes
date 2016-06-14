@@ -1,5 +1,5 @@
-var colors = ['blue', 'green', 'red', 'yellow'];
+      var colors = ['{"name" : "Tammy", "color" : "blue"}', '{"name" : "Joe", "color" : "green"}', '{"name" : "Tamika", "color" : "red"}', '{"name" : "Tom", "color" : "yellow"}'];
 
-colors.shift();
+      colors.shift();
 
-console.log(colors);
+      console.log(colors);
