@@ -1,0 +1,51 @@
+CREATE TABLE goldfish
+	(id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(50),
+	color VARCHAR(50),
+	fins VARCHAR(50),
+	grams INT,
+	PRIMARY KEY (id)
+	)
+
+INSERT INTO goldfish
+VALUES (1, "Cindy", "calico", "frilly", 3);
+
+ALTER TABLE goldfish
+	MODIFY COLUMN grams FLOAT;
+
+INSERT INTO goldfish
+VALUES ("Vittorio", "black", "bifurcated", 3.2);
+
+
+INSERT INTO goldfish
+VALUES   (Festus, gold, bifurcated, 2.8);
+
+INSERT INTO goldfish
+	VALUES ("Delilah", "white", "straight", 3.0),
+  	("Trenton", "orange", "frilly", 3.3)
+
+UPDATE goldfish
+	SET grams = 2.8
+	WHERE id = 5;
+
+DELETE FROM goldfish
+WHERE id = 2;
+
+SELECT *
+FROM goldfish
+ORDER BY grams ASC
+
+SELECT *
+FROM goldfish
+ORDER BY id DESC
+
+SELECT name, fins
+FROM goldfish
+WHERE grams > 3;
+
+
+FROM AL (w3schools tables):
+SELECT *
+  FROM [OrderDetails]
+  JOIN [Products] ON [OrderDetails].ProductID = [Products].ProductID
+  WHERE OrderID = 10250;
