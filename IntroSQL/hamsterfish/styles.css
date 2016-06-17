@@ -1,0 +1,78 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+tr {
+  height: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+td {
+  padding-left: 5px;
+}
+
+.clickMe {
+  height: 75px;
+  width: 300px;
+  margin: 5% 5% 0 5%;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  padding: 70px 0 0 0;
+  color: white;
+  background-color: gray;
+}
+
+#main {
+  width: 1000px;
+}
+
+#goldFish {
+  background-color: #e6ffff;
+  color: #003333;
+  border: 1px solid  #003333;
+;
+}
+
+#hamsters {
+  background-color: #fff2e2;
+  color: #003333;
+  border: 1px solid  #003333;
+}
+
+#leftJoin {
+  background-color: #cc7000;
+}
+
+#rightJoin {
+  background-color: #003333;
+}
+
+#unionYES {
+  width: 700px;
+  padding-bottom: 25px;
+  font-size: 2em;
+  background-color: #326363;
+}
+
+.medium {
+  background-color: #326363;
+  color: white;
+}
+
+.on {
+  background-color: #fff2e2;
+  color: #326363;
+}
+
+.off {
+  background-color: #e6ffff;
+  color: #326363;
+}
+
+article {
+  border-radius:5px;
+  padding: 5px;
+  background-color: silver;
+  color: #112222;
+}
