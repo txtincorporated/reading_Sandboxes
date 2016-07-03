@@ -22,7 +22,7 @@ var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
 var destination = $('#bonVoyage');
-var url = js/myData.json;
+var url = 'js/myData.json';
 $.ajax({
   type: GET,
   url: url,

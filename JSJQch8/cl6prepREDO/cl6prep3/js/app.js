@@ -21,8 +21,13 @@ console.log(objArray);
 var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
-$.getJSON('js/myData.json').done(function(data) {
-  $.each(data.items, function(i, item) {
-    $('#bonVoyage').append('<div>' + data + '</div>');
-  });
-});
+function codeSchool() {
+  var data = $.getJSON('/js/myData.json');
+  console.log(data);
+  // var yabba = (function() {
+    // $.each(data.items, function(i, item) {
+    //   $('#bonVoyage').append('<div>' + data + '</div>');
+    // });
+  // });//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
+};
+codeSchool();
