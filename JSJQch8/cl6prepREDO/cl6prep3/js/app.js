@@ -22,12 +22,12 @@ var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
 function codeSchool() {
-  var data = $.getJSON('/js/myData.json');
-  console.log(data);
-  // var yabba = (function() {
+  $.getJSON('/js/myData.json').done(function(data) {
+    console.log('Yabba-Dabba-Doo');
     // $.each(data.items, function(i, item) {
     //   $('#bonVoyage').append('<div>' + data + '</div>');
     // });
-  // });//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
+  });//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
 };
+
 codeSchool();
