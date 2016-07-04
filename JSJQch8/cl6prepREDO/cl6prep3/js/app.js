@@ -37,4 +37,5 @@ function codeSchool() {
     P(kingyo);
   }
 };
+
 codeSchool();
