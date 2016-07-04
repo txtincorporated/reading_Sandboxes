@@ -1,5 +1,4 @@
 var objArray = [];
-
 function Goldfish(name, gills, tail, poop) {
   this.name = name,
   this.gills = gills,
@@ -21,11 +20,26 @@ console.log(objArray);
 var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
-var $destination = $('#bonVoyage');
-var url = 'js/myData.json';
-$.ajax({
-  url: url,
-  success: function(data) {
-    $destination.html($(data).find('#bonVoyage'));
+var kingyo = [];
+var P = (function(data) {
+  console.log(data);
+  kingyo.map(function(item, index) {
+    var fish = ['Name: ' + item.name,'<br>' + 'Gills: ' + item.gills,'<br>' + 'Tail: ' + item.tail,'<br>' + 'Poop: ' + item.poop + '<br><br>'];
+    console.log(fish);
+    $('#bonVoyage').append('<div>' + fish + '</div>');
+  });
+});//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
+
+function codeSchool() {
+  $.ajax({
+    url: '/js/myData.json',
+    type: 'GET'
+  })
+  .done(F);
+  function F(data){
+    kingyo = data;
+    P(kingyo);
   }
-});
+};
+
+codeSchool();
