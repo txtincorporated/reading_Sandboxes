@@ -1,10 +1,9 @@
 var objArray = [];
-
 function Goldfish(name, gills, tail, poop) {
   this.name = name,
   this.gills = gills,
   this.tail = tail,
-  this. poop = poop;
+  this.poop = poop;
 }
 
 fishies = [['Dobie','silver','bifurcated','stringy'], ['Gawain','gold','single','pellets'], ['Porschia','white','frilly','segments']];
@@ -21,8 +20,22 @@ console.log(objArray);
 var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
-$.getJSON('js/myData.json').done(function(data) {
-  $.each(data.items, function(i, item) {
-    $('#bonVoyage').append('<div>' + data + '</div>');
+var kingyo = [];
+var P = (function(data) {
+  console.log(data);
+  kingyo.map(function(item, index) {
+    var fish = ['Name: ' + item.name,'<br>' + 'Gills: ' + item.gills,'<br>' + 'Tail: ' + item.tail,'<br>' + 'Poop: ' + item.poop + '<br><br>'];
+    console.log(fish);
+    $('#bonVoyage').append('<div>' + fish + '</div>');
   });
-});
+});//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
+
+function codeSchool() {
+  $.getJSON('/js/myData.json').done(F);
+  function F(data){
+    kingyo = data;
+    P(kingyo);
+  }
+};
+
+codeSchool();
