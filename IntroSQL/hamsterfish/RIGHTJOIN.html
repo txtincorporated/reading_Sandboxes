@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Data</title>
+<link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<section>HAMSTERS AND FISH, JOIN RIGHT
+<table border=0>
+<tr>
+<td class='medium'>id</td>
+<td class='medium'>name</td>
+<td class='medium'>color</td>
+<td class='medium'>fur</td>
+<td class='medium'>grams</td>
+<td class='medium'>id</td>
+<td class='medium'>name</td>
+<td class='medium'>color</td>
+<td class='medium'>fins</td>
+<td class='medium'>grams</td>
+</tr>
+
+<tr>
+<td class='on' valign='top'>NULL</td>
+<td class='on' valign='top'>NULL</td>
+<td class='on' valign='top'>NULL</td>
+<td class='on' valign='top'>NULL</td>
+<td class='on' valign='top'>NULL</td>
+<td class='on' valign='top'>7</td>
+<td class='on' valign='top'>Thelma</td>
+<td class='on' valign='top'>copper</td>
+<td class='on' valign='top'>frilly</td>
+<td class='on' valign='top'>3.1</td>
+</tr>
+
+<tr>
+<td class='off' valign='top'>NULL</td>
+<td class='off' valign='top'>NULL</td>
+<td class='off' valign='top'>NULL</td>
+<td class='off' valign='top'>NULL</td>
+<td class='off' valign='top'>NULL</td>
+<td class='off' valign='top'>4</td>
+<td class='off' valign='top'>Delilah</td>
+<td class='off' valign='top'>white</td>
+<td class='off' valign='top'>straight</td>
+<td class='off' valign='top'>2.7</td>
+</tr>
+
+<tr>
+<td class='on' valign='top'>6</td>
+<td class='on' valign='top'>Princess Leia</td>
+<td class='on' valign='top'>pinto</td>
+<td class='on' valign='top'>sleek</td>
+<td class='on' valign='top'>2.8</td>
+<td class='on' valign='top'>5</td>
+<td class='on' valign='top'>Festus</td>
+<td class='on' valign='top'>gold</td>
+<td class='on' valign='top'>bifurcated</td>
+<td class='on' valign='top'>2.8</td>
+</tr>
+
+<tr>
+<td class='off' valign='top'>3</td>
+<td class='off' valign='top'>Ripley</td>
+<td class='off' valign='top'>black</td>
+<td class='off' valign='top'>angora</td>
+<td class='off' valign='top'>3</td>
+<td class='off' valign='top'>1</td>
+<td class='off' valign='top'>Cindy</td>
+<td class='off' valign='top'>calico</td>
+<td class='off' valign='top'>frilly</td>
+<td class='off' valign='top'>3</td>
+</tr>
+
+<tr>
+<td class='on' valign='top'>2</td>
+<td class='on' valign='top'>Smith</td>
+<td class='on' valign='top'>blond</td>
+<td class='on' valign='top'>fluffy</td>
+<td class='on' valign='top'>3.2</td>
+<td class='on' valign='top'>3</td>
+<td class='on' valign='top'>Vittorio</td>
+<td class='on' valign='top'>black</td>
+<td class='on' valign='top'>bifurcated</td>
+<td class='on' valign='top'>3.2</td>
+</tr>
+
+<tr>
+<td class='off' valign='top'>5</td>
+<td class='off' valign='top'>Wolverine</td>
+<td class='off' valign='top'>brown</td>
+<td class='off' valign='top'>bushy</td>
+<td class='off' valign='top'>3.3</td>
+<td class='off' valign='top'>6</td>
+<td class='off' valign='top'>Trenton</td>
+<td class='off' valign='top'>orange</td>
+<td class='off' valign='top'>frilly</td>
+<td class='off' valign='top'>3.3</td>
+</tr>
+</table>
+</section>
+<br>
+<br>
+<section>QUERY
+  <article>
+    SELECT * <br>
+	FROM Code301sandboxing.hamsters<br>
+    RIGHT JOIN Code301sandboxing.goldfish<br>
+    ON hamsters.grams = goldfish.grams<br>
+    ORDER BY hamsters.grams ASC;<br>
+  </article>
+</section>
+</body></html>
