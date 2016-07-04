@@ -1,5 +1,4 @@
 var objArray = [];
-
 function Goldfish(name, gills, tail, poop) {
   this.name = name,
   this.gills = gills,
@@ -18,16 +17,20 @@ var fishTank = function() {
 fishTank();
 console.log(objArray);
 
+var F;
 var argleNauts = JSON.stringify(objArray,null,2);
 console.log(argleNauts);
 
 function codeSchool() {
-  var data = $.getJSON('/js/myData.json');
-  console.log(data);
-  // var yabba = (function() {
+  F = $.getJSON('/js/myData.json');
+  function P(data){
+    console.log(F);
+  }
+  P();
+    // var yabba = (function() {
     // $.each(data.items, function(i, item) {
     //   $('#bonVoyage').append('<div>' + data + '</div>');
     // });
-  // });//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
+    // });//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
 };
 codeSchool();
