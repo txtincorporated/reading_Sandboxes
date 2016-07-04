@@ -28,10 +28,14 @@ var P = (function(data) {
     console.log(fish);
     $('#bonVoyage').append('<div>' + fish + '</div>');
   });
-});//TODO: find model of successful .getJSON() call (check portfolio/blog labs)
+});
 
 function codeSchool() {
-  $.getJSON('/js/myData.json').done(F);
+  $.ajax ({
+    url: '/js/myData.json',
+    type: 'GET',
+  })
+  .done(F);
   function F(data){
     kingyo = data;
     P(kingyo);
