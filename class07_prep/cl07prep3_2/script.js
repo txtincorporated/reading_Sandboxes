@@ -1,11 +1,9 @@
-      var capitals = [{country : 'France', capital : 'Paris'}, {country : 'Germany', capital : 'Berlin'}, {country : 'England', capital : 'London'}, {country : 'Spain', capital : 'Madrid'}];
+function hofMan() {
+  return function G(a,b) {
+    return a + b;
+  };
+};
 
-      function G(item) {
-        var results = document.getElementById('results');
-        results.innerHTML = results.innerHTML + 'The ' + item.property[0] + ' of ' + item.country + ' is ' + item.capital + '.<br>';
-      }
+var nexty = hofMan();
 
-      var who = function(array) {
-        return array.map(G);
-      };
-      who(capitals, 'capital');
+console.log(nexty(3,5));//Why on earth does it not  work if you just log hofMan with the same values passed to it?!
